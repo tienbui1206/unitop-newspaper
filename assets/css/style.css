@@ -196,12 +196,12 @@ ul.list-post li .more-info p.post-excerpt{
     margin-bottom: 41px;
 }
 .box.top-topic .box-head{
-    border-bottom: 1px solid #ff2d2d;
+    border-bottom: 2px solid #ff2d2d;
     margin-bottom: 25px;
 }
 .box.top-topic .box-head h3{
     background: #ff2d2d;
-    padding: 2.5px 15px;
+    padding: 2px 15px;
 }
 ul.list-topic li a{
     position: relative;
@@ -214,7 +214,7 @@ ul.list-topic li a{
 }
 ul.list-topic li a span.num-post{
     position: absolute;
-    right: 27px;
+    right: 0px;
 }
 ul.list-topic li:hover a{
     color: #ff2d2d;
