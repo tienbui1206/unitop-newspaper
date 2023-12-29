@@ -1,0 +1,319 @@
+/* 
+TỪ TỔNG QUAN ĐẾ CHI TIẾT
+Từ ngoài vào trong
+Từ sau ra trước
+Từ trên xuống dưới
+Từ trái sang phải  */
+body{
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display:flex;
+}
+ul{
+    list-style:none;
+    padding-left:0;
+}
+/* ================= HEADER =============== */
+#header{
+    background: #23282d;
+    padding-top:27px;
+    padding-bottom: 10px;
+}
+/* ---------------- Form Search ------------------ */
+form#search {
+    position:relative;
+}
+form#search input{
+    width: 248px;
+    border:none;
+    outline: none;
+    background: #131619;
+    padding: 9px 42px 9px 15px;
+    font-size:14px;
+    color:#7c7c7d;
+}
+form#search input::placeholder{
+    color:#909090;
+}
+form#search button{
+    position: absolute;
+    top:0;
+    right:0;
+    border: none;
+    outline: none;
+    background: none;
+    color: #7c7c7d;
+    padding: 9px 13px;
+}
+/* end form */
+/* ------------ Main Menu ----------------- */
+nav{
+    margin-top: 7px;
+    flex-basis:100%;
+    border-right: 10px solid #ff2d2d;
+}
+ul#main-menu {
+    margin-bottom: 0;
+}
+ul#main-menu li a{
+    display:block;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 600;
+    padding: 6px 20px;
+    transition: all 0.25s ease-in-out;
+}
+ul#main-menu li:first-child a{
+    padding-left:0;
+}
+ul#main-menu li:hover a{
+    color: #4db2ec;
+}
+/* ================ FEATURED POST ============ */
+#wp-featured-post{
+    padding-top: 32px;
+}
+.featured-post{
+    flex-basis: 100%;
+}
+.box .box-head{
+    margin-bottom: 20px;
+}
+.box .box-head h3{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eeeeee;
+    text-transform: uppercase;
+    background-color: #23282d;
+    margin-bottom: 0;
+    padding: 3px 15px;
+}
+.box.featured-post .box-body{
+    padding-bottom: 29px;
+    border-bottom: 1px solid #dadada;
+}
+ul.list-featured-post{
+    margin-bottom: 0;
+}
+ul.list-featured-post li{
+    flex: 0 1 360px;
+}
+ul.list-featured-post li a.post-thumb{
+    display:block;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+ul.list-featured-post li a.post-thumb img{
+    transition: all 0.25s ease-in-out;
+}
+ul.list-featured-post li:hover a.post-thumb img{
+    transform: scale(1.1,1.1);
+}
+ul.list-featured-post li a.post-title{
+    display: block;
+    font-weight: 600;
+    color:#5f5f5f;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+}
+ul.list-featured-post li:hover a.post-title{
+    color: #111111;
+}
+/* end featured post */
+/* =============== WP CONTENT ============== */
+#wp-content{
+    padding-top:20px;
+}
+/* ------------ Content -------------------*/
+#content{
+    flex-basis: 765px;
+    padding-right: 15px;
+}
+.box.new-post .box-head{
+    border-bottom: 2px solid #4db2ec;
+    margin-bottom: 30px;
+}
+.box.new-post .box-head h3{
+    background: #4db2ec;
+    padding: 2px 15px;
+}
+ul.list-post li{
+    display:flex;
+    margin-bottom: 40px;
+}
+ul.list-post li a.post-thumb{
+    flex-basis: 278px;
+    padding-right: 15px;
+}
+ul.list-post li .more-info{
+    flex-basis: 472px;
+    padding-left: 15px;
+}
+ul.list-post li .more-info a.post-title{
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    color:#111111;
+    transition: all 0.25s ease-in-out;
+}
+ul.list-post li:hover .more-info a.post-title{
+    color: #4db2ec;
+}
+ul.list-post li .more-info .post-published{
+    font-weight: 600;
+    font-size: 11px;
+    padding: 5.25px 0;
+}
+ul.list-post li .more-info .post-published a.post-author{
+    text-decoration: none;
+    color: #111111;
+}
+ul.list-post li .more-info .post-published span.post-date{
+    color: #aaaaaa;
+}
+ul.list-post li .more-info p.post-excerpt{
+    margin-bottom: 0;
+    font-size: 13px;
+    color:#777777;
+}
+/* ------------ Sidebar ----------- */
+#sidebar{
+    flex-basis: 375px;
+    padding-left: 15px;
+}
+#sidebar a.ads{
+    display:block;
+    margin-bottom: 41px;
+}
+.box.top-topic .box-head{
+    border-bottom: 1px solid #ff2d2d;
+    margin-bottom: 25px;
+}
+.box.top-topic .box-head h3{
+    background: #ff2d2d;
+    padding: 2.5px 15px;
+}
+ul.list-topic li a{
+    position: relative;
+    display:block;
+    padding: 6px 0;
+    text-decoration: none;
+    color: #212121;
+    text-transform: capitalize;
+    transition: all 0.25s ease-in-out
+}
+ul.list-topic li a span.num-post{
+    position: absolute;
+    right: 27px;
+}
+ul.list-topic li:hover a{
+    color: #ff2d2d;
+}
+/* ================ FOOTER ================= */
+#footer{
+    background: #2e2f30;
+    padding-top: 47px;
+    padding-bottom: 80px;
+}
+#footer .box .box-head{
+    margin-bottom: 40px;
+}
+#footer .box .box-head h3{
+    color:#f6f6f6;
+    background: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+/* --------------- Logo Footer -------------- */
+.box.logo-footer {
+    flex-basis: 278px;
+    padding-right: 15px;
+}
+.box.logo-footer .box-head{
+    visibility: hidden;
+}
+.box.logo-footer .box-body a{
+    display: inline-block;
+}
+/* --------------- About Us -------- */
+.box.about-us{
+    flex-basis: 682px;
+    padding-left: 15px;
+    padding-right: 195px;
+}
+.box.about-us .box-body {
+    font-size: 14px;
+
+}
+.box.about-us .box-body p{
+    margin-bottom: 0;
+    color: #f6f6f6;
+}
+.box.about-us .box-body a{
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: all 0.25s ease-in-out;
+}
+.box.about-us .box-body a:hover{
+    color: #4db2ec;
+}
+/* ---------------- Follow Us -------- */
+.box.follow-us{
+    flex-basis: 182px;
+    padding-left: 15px;
+}
+ul.list-social li a{
+    display:block;
+    color: #eeeeee;
+    background: #434648;
+    transition: all 0.25s ease-in-out;
+}
+ul.list-social li a.icon-facebook{
+    padding: 5px 12px;
+}
+ul.list-social li a.icon-instagram{
+    padding: 5px 10px;
+}
+ul.list-social li a.icon-youtube{
+    padding: 5px 8px;
+}
+ul.list-social li a.icon-pinterest{
+    padding: 5px 9.334px;
+}
+ul.list-social li:hover a{
+    color:#4db2ec;
+}
+/* ============== COPYRIGHT ============== */
+#wp-copyright{
+    background: #222527;
+    padding:10.5px 0;
+}
+#wp-copyright p.copyright{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+ul#menu-footer{
+    flex-basis: 225px;
+    margin-bottom: 0;
+}
+ul#menu-footer li a{
+    font-size: 14px;
+    color:#f3f3f3;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+ul#menu-footer li:hover a{
+    color: #4db2ec;
+}
+/* end project unitop newspaper */
